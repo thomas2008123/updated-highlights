@@ -1,0 +1,35 @@
+type,Value
+user,AAZURE308
+category,Finance
+category,HR
+category,IT
+category,Maketing
+category,Sales
+group,Account Team
+group,DBA
+group,Learning
+group,Network
+group,Operations
+group,Product Team
+group,Reporting
+group,Security
+group,Web Team
+activity,Client Onboarding
+activity,Database Optimization
+activity,Employee Training
+activity,Network Upgrage
+activity,Product Launch
+activity,Quarterly Report
+activity,Security Audit
+activity,Server Backup
+activity,Server Maintenance
+activity,Website Redisign
+status,Finished
+status,In Progress
+status,To Investigate
+user ,user 1
+user,user 2
+user,user 3
+user,user 4
+user,user 5
+user, user 6
