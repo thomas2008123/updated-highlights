@@ -1,0 +1,54 @@
+type,Value
+user,AAZURE308
+category,Finance
+category,HR
+category,IT
+category,Maketing
+category,Sales
+group,Account Team
+group,DBA
+group,Learning
+group,Network
+group,Operations
+group,Product Team
+group,Reporting
+group,Security
+group,Web Team
+activity,Client Onboarding
+activity,Database Optimization
+activity,Employee Training
+activity,Network Upgrage
+activity,Product Launch
+activity,Quarterly Report
+activity,Security Audit
+activity,Server Backup
+activity,Server Maintenance
+activity,Website Redisign
+status,Finished
+status,In Progress
+status,To Investigate
+user ,PEPRA-AMEYAW Afriyie
+user,KYDD Andrew
+user,PAYLOR Angie
+user,BODI Anil
+user,RANGARAJ Balamurugan
+user,C-ADM-RLOOSLEY
+user,DEPLESSIS Christine
+user,DENCH Jack
+user,LYCETT James
+user,LAYLAND Karl
+user,MUTHURAMAN Karthik
+user,YAN Lu
+user,BROWN Matthew14
+user,LEROUX Nic
+user,BURTON Oliver
+user,WALKER Paul
+user,WHELAN Richard
+user,LOOSLEY Rob
+user,THEAKSTON Sarah
+user,svc-35BACKUP
+user,svc-PwrP-INOPWAPP
+user,STUMBRA Tegan
+user,KIFFIN Terry
+user,DONACHIE Thomas
+user,ASHIEDU Victor

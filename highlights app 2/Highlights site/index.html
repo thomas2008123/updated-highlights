@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="../styles/main.js" defer></script>
+    <title>Highlights app</title>
+</head>
+<body>
+<header class="navbar">
+    <!-- LEFT -->
+    <div class="nav-left">
+        <h1 class="logo">DFE Highlights</h1>
+    </div>
+
+    <!-- CENTER -->
+    <div class="nav-center">
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Highlights</a></li>
+            <li><a href="info.html">Info</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- RIGHT -->
+    <div class="nav-right">
+        <form class="search">
+            <span class="material-symbols-outlined search-icon">search</span>
+            <input class="search-input" type="search:" placeholder=":">
+        </form>
+
+        <div class="hamburger" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+
+<main>
+    <div>
+        <nav class="promo-bar">
+            <ul class="promo-links">
+                
+                <li class="promo-text">
+                    <p><strong>DFE Highlights table</strong></p>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div class="form-container">
+  <form id="myForm">
+    <div class="form-group">
+      <label for="date">* Date</label>
+      <input type="date" id="date" name="date" value="2026-09-01" required />
+    </div>
+
+    <div class="form-group">
+      <label for="user">* User</label>
+      <select id="user" name="user" required>
+        <option value="svc-PwrP-INOPWAPP">Select user</option>
+        <!-- Add more options as needed -->
+      </select>
+      
+    </div>
+
+    <div class="form-group">
+      <label for="category">* Category</label>
+      <select id="category" name="category" required>
+        <option value="">Select Category</option>
+        <!-- Add category options -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="group">* Group</label>
+      <select id="group" name="group" required >
+        <option value="">Select group</option>
+        <!-- Add status options -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="activity">* activity</label>
+      <select id="activity" name="activity" required >
+        <option value="">Select activity</option>
+        <!-- Add status options -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="status">* Status</label>
+      <select id="status" name="status" required>
+        <option value="">Select status</option>
+        <!-- Add status options -->
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="details">* Details</label>
+      <textarea id="details" name="details" required></textarea>
+    </div>
+
+    <div class="form-group">
+      <label for="comments">Comments</label>
+      <textarea id="comments" name="comments"></textarea>
+    </div>
+
+    
+
+    <div class="button-group">
+      <button type="button" class="btn" onclick="newEntry()">New</button>
+      <button type="button" class="btn" onclick="deleteEntry()">Delete</button>
+      <button type="button" class="btn" onclick="saveEntry()">Save</button>
+      <button type="button" class="btn" onclick="cancelEntry()">Cancel</button>
+
+      <button type="button" class="btn highlight" onclick="loadHighlights()">Get Highlights</button>
+
+    </div>
+  </form>
+</div>
+
+
+
+<div class="filter-bar">
+  <label>
+    <input type="checkbox" id="filterUsers" checked>
+    Show all users
+  </label>
+
+  <label>
+    <input type="checkbox" id="filterDates" checked>
+    Show all dates
+  </label>
+
+  <input
+    type="text"
+    id="nameFilter"
+    placeholder="Filter by user name"
+  />
+
+  <input
+    type="date"
+    id="dateFilter"
+  />
+</div>
+
+
+<!-- Table for activity log -->
+<div class="table-container">
+  <table>
+  <thead>
+    <tr>
+      <th>User</th>
+      <th>Status</th>
+      <th>Group</th>
+      <th>Details</th>
+      <th>Date</th>
+      <th>Category</th>
+      <th>Activity</th>
+    </tr>
+  </thead>
+  <tbody id="tableBody">
+    <!-- Data is inserted here by JavaScript -->
+  </tbody>
+</table>
+</div>
+
+
+
+    
+</main>
+</body>
